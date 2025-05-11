@@ -6,6 +6,9 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * 角色與技能中介表。
+ */
 @Getter
 @Setter
 public class CharacterSkill {

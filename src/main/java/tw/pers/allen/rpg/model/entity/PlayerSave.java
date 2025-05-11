@@ -1,5 +1,7 @@
 package tw.pers.allen.rpg.model.entity;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -7,16 +9,18 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 技能狀態中介表。
+ * 存檔記錄表格。
  */
 @Getter
 @Setter
-public class SkillStatusEffect {
+public class PlayerSave {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Integer skillId;
-	private Integer statusEffectId;
+	private String playerName;
+	private String saveData;
+	private LocalDate created;
+	private LocalDate updated;
 
 }

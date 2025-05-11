@@ -8,7 +8,7 @@ import lombok.Setter;
 import tw.pers.allen.rpg.model.enums.CharacterType;
 
 /**
- * 角色樣板表格，包含玩家與怪物。
+ * 角色樣板表格，包含 Player 與怪物。
  */
 @Getter
 @Setter

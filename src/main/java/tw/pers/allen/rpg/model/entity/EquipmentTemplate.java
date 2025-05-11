@@ -12,18 +12,18 @@ import tw.pers.allen.rpg.model.enums.EquipmentSlot;
  */
 @Getter
 @Setter
-public class Equipment {
+public class EquipmentTemplate {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
 	private EquipmentSlot slot;
-	private Integer bonusHp;
-	private Integer bonusAttack;
-	private Integer bonusDefense;
-	private Integer bonusCritical;
-	private Integer apCostReduction; // AP 消耗減少，最少為 1
+	private Integer baseBonusHp;
+	private Integer baseBonusAttack;
+	private Integer baseBonusDefense;
+	private Integer baseBonusCritical;
+	private Integer baseApReduction; // AP 消耗減少，最少為 1
 	private Integer description;
 
 }

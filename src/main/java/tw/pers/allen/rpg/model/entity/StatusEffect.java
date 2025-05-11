@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.Setter;
 import tw.pers.allen.rpg.model.enums.AttributeType;
 
+/**
+ * 狀態定義表格。
+ */
 @Getter
 @Setter
 public class StatusEffect {

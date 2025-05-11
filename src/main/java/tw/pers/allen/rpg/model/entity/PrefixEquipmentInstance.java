@@ -7,16 +7,16 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 技能狀態中介表。
+ * 前綴裝備中介表。
  */
 @Getter
 @Setter
-public class SkillStatusEffect {
+public class PrefixEquipmentInstance {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Integer skillId;
-	private Integer statusEffectId;
+	private Integer prefixId;
+	private Integer equipmentInstanceId;
 
 }

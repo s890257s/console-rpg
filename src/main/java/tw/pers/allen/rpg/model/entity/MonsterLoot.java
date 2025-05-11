@@ -6,7 +6,9 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-
+/**
+ * 怪物掉落裝備表格。
+ */
 @Getter
 @Setter
 public class MonsterLoot {
@@ -15,7 +17,7 @@ public class MonsterLoot {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private Integer monsterId;
-	private Integer equipmentId;
+	private Integer equipmentTemplateId;
 	private Float dropRate;
 
 }

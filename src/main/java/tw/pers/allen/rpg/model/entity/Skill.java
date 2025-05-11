@@ -6,6 +6,9 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * 技能表格。
+ */
 @Getter
 @Setter
 public class Skill {
@@ -19,5 +22,5 @@ public class Skill {
 	private Float criticalChance;
 	private Float criticalRate;
 	private String description;
-	
+
 }

@@ -7,16 +7,21 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * 技能狀態中介表。
+ * 裝備實體表格，原則上給 Player 使用。
  */
 @Getter
 @Setter
-public class SkillStatusEffect {
+public class EquipmentInstance {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private Integer skillId;
-	private Integer statusEffectId;
+	private Integer equipmentTemplateId;
+	private String name;
+	private Integer bonusAttack;
+	private Integer bonusDefense;
+	private Integer bonusHp;
+	private Integer bonusCritical;
+	private Integer apCostReduction;
 
 }

@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.Setter;
 import tw.pers.allen.rpg.model.enums.EquipmentSlot;
 
+/**
+ * 角色裝備，原則上給 Player 使用。
+ */
 @Getter
 @Setter
 public class CharacterEquipment {
@@ -16,6 +19,6 @@ public class CharacterEquipment {
 	private Integer id;
 	private Integer characterId;
 	private EquipmentSlot equipmentSlot;
-	private Integer equipmentId;
-	
+	private Integer equipmentInstanceId;
+
 }
