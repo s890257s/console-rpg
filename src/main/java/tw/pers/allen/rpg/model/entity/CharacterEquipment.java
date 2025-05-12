@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import tw.pers.allen.rpg.model.enums.EquipmentSlot;
 
 /**
@@ -18,6 +19,7 @@ import tw.pers.allen.rpg.model.enums.EquipmentSlot;
 @Setter
 @Entity
 @Table
+@ToString
 public class CharacterEquipment {
 
 	@Id

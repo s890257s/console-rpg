@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 import tw.pers.allen.rpg.model.enums.CharacterType;
 
 /**
@@ -18,7 +19,8 @@ import tw.pers.allen.rpg.model.enums.CharacterType;
 @Setter
 @Entity
 @Table
-public class Character {
+@Accessors(chain = true)
+public class CharacterTemplate {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

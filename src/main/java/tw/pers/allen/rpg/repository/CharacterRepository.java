@@ -2,8 +2,8 @@ package tw.pers.allen.rpg.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import tw.pers.allen.rpg.model.entity.Character;
+import tw.pers.allen.rpg.model.entity.CharacterTemplate;
 
-public interface CharacterRepository extends JpaRepository<Character, Integer> {
+public interface CharacterRepository extends JpaRepository<CharacterTemplate, Integer> {
 
 }

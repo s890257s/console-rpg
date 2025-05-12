@@ -71,10 +71,15 @@ public class ConsoleUtil {
 		while (true) {
 			print(prompt + " (Y/N)：");
 			String line = SCANNER.nextLine().trim().toUpperCase();
-			if ("Y".equals(line))
+
+			if ("Y".equalsIgnoreCase(line)) {
 				return true;
-			if ("N".equals(line))
+			}
+
+			if ("N".equalsIgnoreCase(line)) {
 				return false;
+			}
+
 			println("請輸入 Y 或 N。");
 		}
 	}
